@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
-import { Link } from 'react-router';
 
-export default class Welcome extends PureComponent {
+export default class About extends PureComponent {
 	render() {
 		return (
 			<div className="inner cover">
