@@ -4,6 +4,9 @@
   "main": "server.js",
   "author": "Scott Heng <scottheng3@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "api": "babel-node server.js"
+  },
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
@@ -14,8 +17,5 @@
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-preset-es2015": "^6.24.1"
-  },
-  "scripts": {
-    "api": "babel-node server.js"
   }
 }

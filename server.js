@@ -14,9 +14,9 @@ const options = {
 	replset: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }
 };
 mongoose.Promise = global.Promise;
-mongoose.connect('YOUR_MONGO_CONNECTION', options);
+mongoose.connect('mongodb://127.0.0.1:27017', options);
 
-const db = mongoose.connection();
+const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -46,3 +46,4 @@ app.route("*").get((req, res) => {
 app.listen(port);
 
 console.log(`listening on port ${port}`);
+
